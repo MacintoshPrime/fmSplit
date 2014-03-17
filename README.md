@@ -3,7 +3,7 @@ fmSplit
 
 Filemaker Split function.
 
-split(text; splitchar; value)
+split(string; text ; value)
 
 example input:
 

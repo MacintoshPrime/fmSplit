@@ -1,0 +1,16 @@
+Let (
+
+[
+stringLength = Length(string);
+targetCount = PatternCount ( string; text );
+getPosition = Position(string; text ; 1;1);
+value = Trim(Proper(Left(string; getPosition - 1)));
+output = If (ValueCount(output) > 0 ; output  & ¶ & value ; value )
+]
+
+;
+
+If (targetCount >  0 ; split(Right(string;  stringLength - getPosition); text; output  ) ; output &  Trim(Proper(string)) )
+
+
+)
